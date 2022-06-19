@@ -1,5 +1,5 @@
 const carCanvas=document.getElementById("carCanvas");
-carCanvas.width=200;
+carCanvas.width=270;
 const networkCanvas=document.getElementById("networkCanvas");
 networkCanvas.width=300;
 
@@ -22,17 +22,17 @@ if(localStorage.getItem("bestBrain")){
 }
 
 const traffic=[
-    new Car(road.getLaneCenter(1),-100,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(0),-300,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(2),-300,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(0),-500,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(1),-500,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(1),-700,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(2),-800,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(2),-900,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(1),-1000,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(0),-900,30,50,"DUMMY",2,getRandomColor()),
-    new Car(road.getLaneCenter(0),-900,30,50,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(1),-100,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(0),-300,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(2),-300,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(0),-500,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(1),-500,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(1),-700,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(2),-800,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(2),-900,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(1),-1100,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(0),-900,40,60,"DUMMY",2,getRandomColor()),
+    new Car(road.getLaneCenter(0),-900,40,60,"DUMMY",2,getRandomColor()),
     
     
 ];
@@ -51,7 +51,7 @@ function discard(){
 function generateCars(N){
     const cars=[];
     for(let i=1;i<=N;i++){
-        cars.push(new Car(road.getLaneCenter(1),100,30,50,"AI"));
+        cars.push(new Car(road.getLaneCenter(1),100,40,60,"AI"));
     }
     return cars;
 }
